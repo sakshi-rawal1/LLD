@@ -1,0 +1,56 @@
+NVT >> Noun Verb Technique
+
+Has-a Relationship
+Composition >> Customer <>----has-a---- Adhar Card >> Adhar card cannot exist without a customer so its a composition //diamond is black
+Aggregation >> Cart <>----has-a-----Item >> the item exists independetly even if it get expires or its not added to card and bought in future. // diamond is white 
+
+Is-a Relationship (Inheritance)
+Lesson---is-a---- Cooking Lesson 
+Lesson---is-a---- Driving Lesson 
+
+SRP >> Single Responsibility Principle 
+(a class, a package, source code) Module >> Only 1 actor can change this
+
+In inhertance (is-a relationship)
+as we go downwards it becomes more specialized 
+as we move upwards it becomes more generalized 
+
+LSP >> Liskov Substitution Principle 
+1. check if the derived class is actually is-a type of parent class
+2. check if we can subsitute the instance of child class with parent class 
+3. the methods in parent class should hold relavent for all the derived classes
+
+ISP >> Interface Segregation Principle 
+
+SOLID >> Dependency Inversion 
+
+Priciple of DI != Application of DI //DI >> Dependency Inversion 
+
+
+Dependency Injection
+Inversion Control 
+
+Every Design pattern has a 
+1. Name
+2. Problem with a certain pattern
+3. Solution 
+4. Consequence
+
+>>Patterns are designed to use interfaces
+>>Patterns favours aggregation over inheritance
+Aggregation means a collection of things that are not part of it>> airport <>---has-a---aeroplane (independent) //white diamond
+Composition means something is a part of another thing >> aeroplane<>---has-a----wheel (dependent) //black diamond
+
+Code Smells to avoid 
+1. Long Methods
+2. Code Duplication
+3. Misleading Names
+4. Obvious comments
+5. Magic Numbers
+6. One-letter variable name
+7. Commented code
+8. dead code
+9. rigidity - difficult to change >> a single changes causes cascade of subsequent changes in dependent modules (tight coupling)
+10. fragility - a small change can break the system in many places with no obvious relation to the place where changes are made
+11. immobility - cannot be reused outside the system 
+12. over design creates complexity
