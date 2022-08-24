@@ -4,6 +4,16 @@ Has-a Relationship
 Composition >> Customer <>----has-a---- Adhar Card >> Adhar card cannot exist without a customer so its a composition //diamond is black
 Aggregation >> Cart <>----has-a-----Item >> the item exists independetly even if it get expires or its not added to card and bought in future. // diamond is white 
 
+Aggregation vs Composition 
+1. Dependency: Aggregation implies a relationship where the child can exist independently of the parent. 
+For example, Bank and Employee, delete the Bank and the Employee still exist. whereas Composition implies a 
+relationship where the child cannot exist independent of the parent. Example: Human and heart, heart don’t exist separate to a Human
+
+2. Type of Relationship: Aggregation relation is “has-a” and composition is “part-of” relation.
+
+3. Type of association: Composition is a strong Association whereas Aggregation is a weak Association.
+
+
 Is-a Relationship (Inheritance)
 Lesson---is-a---- Cooking Lesson 
 Lesson---is-a---- Driving Lesson 
