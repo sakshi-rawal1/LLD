@@ -1,5 +1,7 @@
 NVT >> Noun Verb Technique
 
+Note: In a constructor we can include a call to super() or this() but not both on the first line Also, these calls can only be used inside the constructors.
+
 Has-a Relationship
 Composition >> Customer <>----has-a---- Adhar Card >> Adhar card cannot exist without a customer so its a composition //diamond is black
 Aggregation >> Cart <>----has-a-----Item >> the item exists independetly even if it get expires or its not added to card and bought in future. // diamond is white 
