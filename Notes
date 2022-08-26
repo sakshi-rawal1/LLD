@@ -66,3 +66,25 @@ Code Smells to avoid
 10. fragility - a small change can break the system in many places with no obvious relation to the place where changes are made
 11. immobility - cannot be reused outside the system 
 12. over design creates complexity
+
+
+class A {
+    
+    int i;
+    public A(int i)
+    {
+        this.i=i; 
+    }
+    
+}
+class B extends A{
+    
+    int j;
+    public B(int j)
+    {
+        this.j=j;
+    }
+    
+}
+The above code won’t compile because
+Subclass is not calling the parent class constructor
